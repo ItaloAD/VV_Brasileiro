@@ -1,7 +1,6 @@
-python_version==3.7.10
-numpy==1.21.6
+numpy
 pandas==2.2.2
-scipy==1.11.4
+scipy
 streamlit==1.36.0
 PyMySQL==1.1.1
 SQLAlchemy==2.0.25
