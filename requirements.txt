@@ -1,0 +1,6 @@
+numpy==2.0.1
+pandas==2.2.2
+scipy==1.11.4
+streamlit==1.36.0
+PyMySQL==1.1.1
+SQLAlchemy==2.0.25
