@@ -507,6 +507,5 @@ for ativo, i in zip(capturas_ativos, range(1, len(capturas_ativos)+1)):
 
     coluna.divider()
 
-while True:
-    time.sleep(30)
-    st.rerun()
+time.sleep(30)
+st.rerun()
