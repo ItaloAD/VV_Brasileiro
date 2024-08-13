@@ -7,6 +7,7 @@ import numpy as np
 import datetime as dt
 from scipy.stats import norm
 from math import sqrt, log, pow, erf, e
+import time
 
 def converter_valor(valor):
     if valor is np.nan:
@@ -505,3 +506,7 @@ for ativo, i in zip(capturas_ativos, range(1, len(capturas_ativos)+1)):
     c3.subheader(total)
 
     coluna.divider()
+
+while True:
+    time.sleep(30)
+    st.rerun()
