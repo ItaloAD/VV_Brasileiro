@@ -117,7 +117,7 @@ for i, df_un in enumerate(dfs):
     dfs[i] = df_merged
 
 show = st.sidebar.toggle("Visualizar Operações")
-pela_vi = st.sidebar.toggle("Calculo com VI do Último Preço")
+pela_vi = st.sidebar.toggle("Calculo com VI do Último Preço", value=True)
 
 colunas_importantes = ['codigo','categoria','expiracao','strike','dte','spot','qtde','pm','ultimo','bid','ask', 'pl%', 'pl']
 colunas_gregas = ['vi','vh','price','delta','theta','intrinseco','extrinseco']
@@ -138,7 +138,7 @@ tabela_geral = {
     'Delta Beta': []
 }
 
-com_po = st.toggle("Resultados com pó")
+com_po = st.toggle("Resultados com pó", value=True)
 premios_i = fetch_data(engine, "premios_iniciais")
 capturas_theta = fetch_data(engine, "capturas_theta")
 for dfa in dfs:
