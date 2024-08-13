@@ -364,7 +364,7 @@ ct_group = capturas_theta.groupby('operacao').agg({'captura':'sum','total':'sum'
 
 planilha = pd.DataFrame.from_dict(tabela_geral)
 
-planilha.to_excel('C:/Users/Bruno/Desktop/OpLab API/Carteira.xlsx')
+#planilha.to_excel('C:/Users/Bruno/Desktop/OpLab API/Carteira.xlsx')
 
 if ciclo_selecionado != 'Geral':
     ciclo_selecionado = ciclo_selecionado[8:]+"/"+ciclo_selecionado[5:7]+"/"+ciclo_selecionado[:4]
