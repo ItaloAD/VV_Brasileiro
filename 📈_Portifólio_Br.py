@@ -482,11 +482,11 @@ for ativo, i in zip(capturas_ativos, range(1, len(capturas_ativos)+1)):
         c1.subheader(codigo)
         positivo = False
         if aux.loc[codigo, 'captura'].sum() > 0:
-            captura = f":green[{aux.loc[codigo,'captura']:,.2f}]"
-            total = f":green[{aux.loc[codigo,'total']:,.2f}]"
+            captura = f":green[{aux.loc[codigo,'captura'].sum():,.2f}]"
+            total = f":green[{aux.loc[codigo,'total'].sum():,.2f}]"
         else: 
-            captura = f":red[{aux.loc[codigo,'captura']:,.2f}]"
-            total = f":red[-{aux.loc[codigo,'total']*-1:,.2f}]"
+            captura = f":red[{aux.loc[codigo,'captura'].sum():,.2f}]"
+            total = f":red[-{aux.loc[codigo,'total'].sum()*-1:,.2f}]"
         c2.subheader(captura)
         c3.subheader(total)
     
