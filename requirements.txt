@@ -4,3 +4,4 @@ scipy
 streamlit==1.36.0
 PyMySQL==1.1.1
 SQLAlchemy==2.0.25
+cryptography
