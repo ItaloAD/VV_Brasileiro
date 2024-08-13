@@ -66,8 +66,10 @@ st.set_page_config(
     page_title="Portifólio"
 )
 
-ip_publico = st.text_input("IP Público", "177.70.175.53")
-porta = st.text_input("Porta", "3715")
+#ip_publico = st.text_input("IP Público", "177.70.175.53")
+ip_publico = "177.70.175.53"
+#porta = st.text_input("Porta", "3715")
+porta = "3715"
 
 user = "aws"
 password = "123"
@@ -96,7 +98,8 @@ notional = todos_contratos[(todos_contratos['tipo_opt'] == 'PUT') & (todos_contr
 
 ciclos = list(df['expiracao'].drop_duplicates())
 
-ciclo_selecionado = st.selectbox("Ciclo", ["Geral"]+ciclos)
+#ciclo_selecionado = st.selectbox("Ciclo", ["Geral"]+ciclos)
+ciclo_selecionado = "Geral"
 
 sep_ativos = list(df['ativo'].drop_duplicates())
 if ciclo_selecionado == "Geral":
@@ -507,5 +510,5 @@ for ativo, i in zip(capturas_ativos, range(1, len(capturas_ativos)+1)):
 
     coluna.divider()
 
-time.sleep(30)
+time.sleep(180)
 st.rerun()
